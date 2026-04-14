@@ -1,0 +1,13 @@
+def diff_set(a, b):
+    # (a.difference(b)).union(b.difference(a)) == a.symmetric_difference(b)
+    sorted_list = sorted(a.symmetric_difference(b))   
+    for i in (sorted_list):
+        print(i)
+    return 0
+
+if __name__ =='__main__':
+    M = int(input())
+    a = set(map(int,input().split()))
+    N = int(input())
+    b = set(map(int,input().split()))
+    diff_set(a, b)
