@@ -1,0 +1,5 @@
+import itertools
+res = []
+for k, g in itertools.groupby(input()):
+    res.append(tuple((len(list(g)), int(k))))
+print(*res)
