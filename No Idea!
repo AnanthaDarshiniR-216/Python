@@ -1,0 +1,15 @@
+input()
+
+nums = {}
+for num in input().split():
+    nums[num] = nums.get(num, 0) + 1
+
+current_mood = 0
+
+for n in input().split():
+    current_mood += nums.get(n, 0)
+
+for n in input().split():
+    current_mood -= nums.get(n, 0)
+
+print(current_mood)
