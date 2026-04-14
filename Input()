@@ -1,0 +1,4 @@
+x,k = map(int,input().split())
+y = input()
+z = eval(y)
+print('True' if int(z)  == int(k) else 'False')
